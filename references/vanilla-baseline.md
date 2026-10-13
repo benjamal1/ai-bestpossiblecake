@@ -11,4 +11,4 @@ Use a conventional creamed vanilla butter cake as a comparison anchor: flour, su
 - **Texture:** tenderness, moisture, and crumb relative to a conventional layer/bundt-style butter cake.
 - **Leavening:** plausible lift and crumb openness relative to a cake using a suitable leavener and/or its intended air-incorporation method.
 
-The package's 0–5 rubric is an explicit project heuristic; no controlled bake trials validate these scores. Scores estimate ingredient/formula alignment only, not bake success or user skill. See the [cake formulator skill](../.agents/skills/cake-formulator/SKILL.md).
+The package's 0–5 rubric is an explicit project heuristic; no controlled bake trials validate these scores. Scores estimate ingredient/formula alignment only, not bake success or user skill. See the [cake formulator skill](../skills/cake-formulator/SKILL.md).

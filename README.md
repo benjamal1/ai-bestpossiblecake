@@ -1,37 +1,33 @@
 # Best Possible Cake
 
-A downloadable, portable teaching agent that formulates cake from available edible ingredients by reasoning about cake-formation science—not merely retrieving a matching recipe. The package uses the open Agent Skills format. It includes two focused skills: **cake-formulator** and **cake-science-tutor**.
+A teaching agent that reasons from cake-making science to make the best feasible cake from available ingredients. It explains ingredient functions and uncertainty rather than merely finding a recipe to copy.
 
-The agent can explain plausible ingredient mechanisms and generate experimental formulations, but untested formulas are not guaranteed to succeed. Mechanistic reasoning is not a substitute for empirical baking validation.
+## Use it here
 
-## Download and install
+1. `cd` to this repository root in an AI coding agent that reads `AGENTS.md`.
+2. Ask naturally for a cake recipe, ingredient substitution, or explanation of cake science. The root [`AGENTS.md`](AGENTS.md) is the agent entry point and routes the task to the relevant skill.
+3. If your agent does not automatically read `AGENTS.md`, provide that file as its instructions.
 
-1. Download this repository as a ZIP from GitHub (**Code → Download ZIP**) or clone it.
-2. Find the skill folders under [`.agents/skills/`](.agents/skills/).
-3. Install or copy both skill directories into the documented skill-discovery location for your agent:
-   - **Codex:** repository `.agents/skills/` is already in the expected location; for user-wide installation, copy the skill folders under `$HOME/.agents/skills/`.
-   - **Claude Code:** copy them under `.claude/skills/` in a project or the documented user-level skills directory.
-   - **Other Agent Skills-compatible agents:** use that product’s documented skill directory. The `SKILL.md` format is interoperable, but discovery paths and optional features differ by product.
-4. Start a fresh agent session or refresh skills if required by that product. Invoke `cake-formulator` for recipe/ingredient requests or `cake-science-tutor` for mechanism explanations.
+No plugin, marketplace, app, or setup command is required.
 
-This repository provides standalone skills, not a provider-specific hosted agent, plugin, or universal installer. See the official [Agent Skills specification](https://agentskills.io/specification), [Codex skills docs](https://developers.openai.com/codex/skills), and [Claude Code skills docs](https://code.claude.com/docs/en/skills) for current platform instructions.
+## Agent materials
 
-## Package contents
+- [`AGENTS.md`](AGENTS.md): primary Best Possible Cake agent instructions, loaded when working in this repository.
+- [`skills/best-possible-cake/SKILL.md`](skills/best-possible-cake/SKILL.md): primary packaged agent skill.
+- [`skills/cake-formulator/SKILL.md`](skills/cake-formulator/SKILL.md): focused recipe-generation and substitution workflow.
+- [`skills/cake-science-tutor/SKILL.md`](skills/cake-science-tutor/SKILL.md): focused mechanism-explanation workflow.
+- [`references/cake-formation-science.md`](references/cake-formation-science.md): the canonical, source-linked causal model shared by the skills.
+- [`references/`](references/): food safety, practical examples, and relative comparison baseline.
+- [`sources/source-notes.md`](sources/source-notes.md): source provenance and evidence limitations.
+- [`evaluation/scenarios.md`](evaluation/scenarios.md): 14 manual rubric-based scenarios.
+- [`classroom-demo.md`](classroom-demo.md): classroom demonstration and debrief.
 
-- [`.agents/skills/cake-formulator/`](.agents/skills/cake-formulator/SKILL.md): first-principles cake formulation, safe feasibility handling, transparent outcome reporting.
-- [`.agents/skills/cake-science-tutor/`](.agents/skills/cake-science-tutor/SKILL.md): explains cake mechanisms rather than substituting recipe rules for science.
-- [`references/cake-formation-science.md`](references/cake-formation-science.md): causal model of gas-cell formation, rheology, structure setting, ingredient interactions, and the limits of inference.
-- [`references/`](references/): evidence-linked food safety, substitutions/process, and baseline materials.
-- [`sources/source-notes.md`](sources/source-notes.md): research provenance, which claims are supported, evidence limitations, and the Agent Skills standard sources.
-- [`evaluation/scenarios.md`](evaluation/scenarios.md): 12 manual, rubric-based behavioral scenarios.
-- [`classroom-demo.md`](classroom-demo.md): classroom demonstration aligned with the learning objective.
+The skills use the open Agent Skills `SKILL.md` format and remain visible at the repository root. To use this as an agent, keep the repository intact and open it as the project so `AGENTS.md` can reach the skills and shared references. Individual skills depend on the package-level science reference, so do not copy a skill directory by itself. Other products may have different skill-discovery conventions; no plugin or marketplace support is required here.
 
-## Scientific and product boundaries
+## Limits
 
-The skill reasons from ingredient composition and physical/chemical mechanisms: generate or incorporate gas, retain and expand bubbles, then set a starch/protein framework around them. It distinguishes source evidence from inference. It must not copy a baseline recipe as the sole formulation method, fabricate precise ratios, treat model scores as validated probabilities, or claim an untested formulation is reliable. A research-selected vanilla cake is only a relative comparison anchor.
-
-Version one does not guarantee specialized dietary or allergy-safe baking. The agent cannot verify ingredient identity/labels, cross-contact, equipment calibration, or execution. It is not professional medical, dietary, or food-safety advice. Never taste raw batter; follow reliable food-safety guidance.
+Mechanistic reasoning guides plausible formulations but does not validate an untested ratio or guarantee a successful bake. No bake trials have yet validated novel formulas or the qualitative 0–5 relative scores. The vanilla cake is only a comparison anchor. The agent does not guarantee specialized-diet or allergy-safe baking and is not professional medical, dietary, or food-safety advice. Never taste raw batter.
 
 ## Evaluation
 
-Run the scenarios in [`evaluation/scenarios.md`](evaluation/scenarios.md) manually with the skills and reference documents available. The repository has no automated model harness and the scenarios do not prove performance. No new formulation is validated until it has been baked and evaluated.
+Run the prompts in [`evaluation/scenarios.md`](evaluation/scenarios.md) with `AGENTS.md`, the relevant skills, and references available. The repository has no automated model harness; manual scenario scores are not validated performance claims.

@@ -4,8 +4,8 @@
 
 ## Setup
 
-- Instructor downloads/clones the repository and installs the `cake-formulator` and `cake-science-tutor` skill folders from `.agents/skills/` into the chosen Agent Skills-compatible host. Check that product's install/discovery instructions; paths and features vary.
-- Provide the skills' bundled science references to the agent, or rely on the references already included in each skill folder.
+- Instructor opens the repository root in an agent that reads `AGENTS.md`; no plugin install or marketplace is needed.
+- If the host does not load `AGENTS.md` automatically, provide it as the agent instructions. The skills and shared science reference are visible in the repository.
 - Prepare a classroom-safe, checked ingredient scenario: flour, sugar, eggs, neutral oil, milk, baking powder, salt, vanilla, plus a 9-inch round pan and oven. State quantities only if known.
 - Use ingredients that are in date and not recalled. Do not invite tasting batter. Observe ordinary handwashing and clean work surfaces.
 

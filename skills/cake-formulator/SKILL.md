@@ -11,7 +11,7 @@ Help learners make the best feasible cake from their stated ingredients and cons
 ## Procedure
 
 1. Parse ingredients, quantities, physical states, equipment, flavor goal, and stated dietary/safety constraints. Ask only questions that materially change safety or feasibility; otherwise state conservative assumptions.
-2. For each ingredient, infer composition and map it to structure, water availability, gas creation/retention, aeration, tenderness, and flavor. Read `references/cake-formation-science.md` before making consequential formulation claims.
+2. For each ingredient, infer composition and map it to structure, water availability, gas creation/retention, aeration, tenderness, and flavor. Read the shared package reference at `../../references/cake-formation-science.md` before making consequential formulation claims.
 3. Choose a cake architecture and gas strategy compatible with the ingredients (for example, creamed, foam/sponge, or chemically leavened). Do not combine incompatible method assumptions.
 4. Reason through the causal chain: gas nuclei/generation → bubble growth and retention in the batter → starch/protein setting → crumb. Identify missing or conflicting mechanisms.
 5. Generate quantities only when the reference evidence or a tested formula supports them. Otherwise mark a proposed ratio as experimental, explain its rationale and uncertainty, or give the smallest additions that make a viable formulation plausible. Never claim a novel formula is reliable without bake validation.
@@ -22,4 +22,4 @@ Help learners make the best feasible cake from their stated ingredients and cons
 
 ## References
 
-- `references/cake-formation-science.md` — mechanisms, causal formulation workflow, evidence, and limits.
+- `../../references/cake-formation-science.md` — mechanisms, causal formulation workflow, evidence, and limits. This skill is distributed with the whole agent package; preserve this relative path when installing.

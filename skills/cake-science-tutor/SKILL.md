@@ -10,7 +10,7 @@ Teach the causal science of cake formation in plain language, adding technical d
 
 ## Method
 
-1. Read `references/cake-formation-science.md` and identify the mechanism relevant to the question.
+1. Read the shared package reference at `../../references/cake-formation-science.md` and identify the mechanism relevant to the question.
 2. Explain the causal chain: ingredient composition/physical state → interaction in batter → gas-cell behavior and/or setting → likely crumb outcome.
 3. Distinguish observed evidence from generalization. State which cake architecture and experimental conditions the evidence covers; don't apply sponge-cake findings as universal laws.
 4. Explain coupled functions and tradeoffs (water, starch gelatinization, protein setting, gluten, fat, sugar, air/CO₂/steam, batter rheology) rather than claiming each ingredient has one isolated job.
@@ -19,4 +19,4 @@ Teach the causal science of cake formation in plain language, adding technical d
 
 ## References
 
-- `references/cake-formation-science.md` — evidence-linked mechanistic model and its limits.
+- `../../references/cake-formation-science.md` — evidence-linked mechanistic model and its limits. This skill is distributed with the whole agent package; preserve this relative path when installing.

@@ -32,11 +32,11 @@ The detailed agent-facing explanation and source-specific limits are in [`../ref
 
 ## Portable Agent Skills standards — official documentation read
 
-1. **OpenAI, “Build skills”** — https://developers.openai.com/codex/skills . Read during this session. Defines skill directories centered on `SKILL.md`, with optional references/scripts/assets; Codex repository discovery uses `.agents/skills`; platform-specific locations vary. For reusable distribution, OpenAI recommends packaging skills as plugins, while direct directories are suitable for repository-scoped authoring and download/copy installation.
+1. **OpenAI, “Build skills”** — https://developers.openai.com/codex/skills . Read during this session. Defines skill directories centered on `SKILL.md`, with optional references/scripts/assets; Codex repository discovery uses `.agents/skills`; platform-specific locations vary. This repo's primary “cd-and-use” path is root `AGENTS.md`; the visible `skills/` folder is the downloadable Agent Skills source, to be installed into another host only when needed.
 2. **Agent Skills, “Specification”** — https://agentskills.io/specification . Read during this session. Defines the interoperable format: a directory with `SKILL.md`, YAML frontmatter requiring `name` and `description`, optional references/assets/scripts, and progressive disclosure. It recommends keeping skill instructions focused and provides a validation tool.
 3. **Anthropic, “Extend Claude with skills”** — https://code.claude.com/docs/en/skills . Read during this session. Documents Claude Code skill discovery and the same `SKILL.md`-centered format, with platform-specific install/discovery conventions.
 
-**Project decision:** author skills in the open Agent Skills format under Codex’s repository discovery path `.agents/skills/`. The standard is shared, but installation paths and optional features are not identical across products. The README must instruct users to download the repository and install/copy the skill directories into their chosen agent’s documented skill location; do not promise one universal installer or feature parity. Plugin packaging is a possible later distribution method, not required for this first downloadable repo package.
+**Project decision:** use the repository directly: `AGENTS.md` is the primary local agent instruction and routes to the visible `skills/` directory. Do not require plugin or marketplace support. The skill source is open Agent Skills format; host-specific installation is optional and requires copying the visible skill directories to that host's documented location. Codex's hidden `.agents/skills/` is a host discovery convention, not the downloadable package layout.
 
 ## Prior recipe/practical sources retained
 
