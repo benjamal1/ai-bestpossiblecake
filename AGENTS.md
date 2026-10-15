@@ -4,6 +4,4 @@ This repository packages the **Best Possible Cake** agent. For any user request 
 
 The canonical mechanism reference is [`references/cake-formation-science.md`](references/cake-formation-science.md). Keep one source of truth for scientific claims; skill files point to this packaged reference. Use the repository directly from its root; no plugin, marketplace, or install command is required.
 
-Before running any `git` command or `git clone` for the user, follow [`skills/ensure-git/SKILL.md`](skills/ensure-git/SKILL.md) if git may not be installed; it installs git locally without admin rights.
-
 When changing the agent package, preserve the visible `skills/<skill-name>/SKILL.md` layout and valid Agent Skills frontmatter. Verify any skill/reference pointers still resolve from the downloadable repository archive. Do not imply that untested formulations or qualitative scores are validated outcomes.

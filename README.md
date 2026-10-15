@@ -12,13 +12,13 @@ No plugin, marketplace, app, or setup command is required.
 
 ## No git installed?
 
-You can't `git clone` this repository without git. Download it as a ZIP instead:
+You don't need git to use this repository. Download it as a ZIP and open the unzipped folder in your agent:
 
 ```bash
 curl -L -o cake.zip https://github.com/benjamal1/ai-bestpossiblecake/archive/refs/heads/main.zip && unzip cake.zip
 ```
 
-Open the unzipped folder in your agent. If you later ask it to clone a repository, [`skills/ensure-git/SKILL.md`](skills/ensure-git/SKILL.md) has it install git locally first (no admin rights; `scripts/setup-git.sh` on macOS/Linux, `scripts/setup-git.ps1` on Windows). The agent needs terminal access to do this.
+To clone a repository, just ask your agent to do it.
 
 ## Agent materials
 
