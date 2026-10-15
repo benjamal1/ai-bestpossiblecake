@@ -16,6 +16,7 @@ No plugin, marketplace, app, or setup command is required.
 - [`skills/best-possible-cake/SKILL.md`](skills/best-possible-cake/SKILL.md): primary packaged agent skill.
 - [`skills/cake-formulator/SKILL.md`](skills/cake-formulator/SKILL.md): focused recipe-generation and substitution workflow.
 - [`skills/cake-science-tutor/SKILL.md`](skills/cake-science-tutor/SKILL.md): focused mechanism-explanation workflow.
+- [`skills/cake-outcome-comparison/SKILL.md`](skills/cake-outcome-comparison/SKILL.md): end-of-session prompt generator for a concise side-by-side cake-comparison infographic.
 - [`references/cake-formation-science.md`](references/cake-formation-science.md): the canonical, source-linked causal model shared by the skills.
 - [`references/`](references/): food safety, practical examples, and relative comparison baseline.
 - [`sources/source-notes.md`](sources/source-notes.md): source provenance and evidence limitations.
